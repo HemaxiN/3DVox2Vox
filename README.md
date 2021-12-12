@@ -22,7 +22,7 @@ Python 3.5.2, Keras 2.2.4 and other packages listed in `requirements.txt`.
 
 ## Training on your own dataset
 
-Change the parameters `train_dir` and `val_dir` in the file `train_main.py`, where `train_dir`, `val_dir` are organized as follows:
+Change the parameters `train_dir` and `val_dir` in the file `train_main.py`, where `train_dir` and `val_dir` are organized as follows:
 
 ```
 train_val_dataset
