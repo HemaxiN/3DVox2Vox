@@ -37,7 +37,11 @@ where images are .tif files and correspond to microscopy image patches of size (
 
 ## Evaluation
 
+To generate images using a trained G model, change the following parameters in the file `test_main.py`and run it:
 
+* `models_path`: path to the trained G model 
+* `input_path`: directory containing input images for G
+* `save_dir`: directory where the synthetic images will be saved.
 
 To compute the Fréchet Inception Distance (FID) score, change the parameters `img1_dir` and `img2_dir` in the file `fid_score_main.py`, where:
 
