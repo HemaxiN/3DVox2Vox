@@ -33,4 +33,4 @@ train_val_dataset
     ├── images
     └── masks
 ```
-where images are .tif files and correspond to microscopy image patches of size (256,256,64,3), and masks are .tif files corresponding to input image patches of size (256,256,64,3).
+where images are .tif files and correspond to microscopy image patches of size (64,256,256,3), and masks are .tif files corresponding to input image patches of size (64,256,256,3).
