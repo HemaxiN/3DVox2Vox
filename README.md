@@ -27,13 +27,13 @@ Change the parameters `train_dir` and `val_dir` in the file `train_main.py` amd 
 ```
 train_val_dataset
 ├── train
-│   ├── images
-│   └── masks
+│   ├── images  `0.tif`, `1.tif`, ..., `N.tif`
+│   └── masks   `0.tif`, `1.tif`, ..., `N.tif`
 └── val
-    ├── images
-    └── masks
+    ├── images `0.tif`, `1.tif`, ..., `M.tif`
+    └── masks `0.tif`, `1.tif`, ..., `M.tif`
 ```
-where images are .tif files and correspond to microscopy image patches of size (64,256,256,3), and masks are .tif files corresponding to input image patches of size (64,256,256,3).
+where images are .tif files that correspond to microscopy image patches of size (64,256,256,3), and masks are .tif files corresponding to input image patches of size (64,256,256,3).
 
 ## Evaluation
 
