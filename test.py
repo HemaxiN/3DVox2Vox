@@ -14,13 +14,14 @@ def load_real_samples(input_path, ix, img_shape):
     k=0
     for i in ix:
         mask = tifffile.imread(os.path.join(input_path , str(i)+'.tif')) # RGB image
+        #print(np.shape(mask))
         X2[k,:]=(mask-127.5) /127.5
         k=k+1
     return X2
 
 # generate samples and save as a plot and save the model
 def summarize_performance(g_model, samples_, input_path, save_dir, img_shape):
-    for s in samples_:
+    for s in range(samples_):
         # select a sample of input images
         X_realA = load_real_samples(input_path, [s], img_shape)
         # generate a batch of fake samples
@@ -36,5 +37,6 @@ def predict(models_path, input_path, save_dir, img_shape):
     patch_numbers = len(os.listdir(input_path))
     print("Number of Test Samples: %i" % patch_numbers)
     g_model = load_model(models_path)
+    print('Model Loaded')
     summarize_performance(g_model, patch_numbers, input_path, save_dir, img_shape)
 
