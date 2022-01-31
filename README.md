@@ -13,7 +13,7 @@ We use a Vox2Vox model to generate 3D microscopy images of nuclei and Golgi. The
 
 Im this work we compared four approaches to generate synthetic microscopy images of nuclei and Golgi.  All the approaches are based on the Vox2Vox model, the only difference between them is the input image (x) that contains the conditions to generate the synthetic images. The four input images considered in this work are the following:
 
-![](https://github.com/HemaxiN/3DVox2Vox/blob/main/images/input_images.png)
+![](https://github.com/HemaxiN/3DVox2Vox/blob/main/images/input_imagess.png)
 
 
 ## Requirements
